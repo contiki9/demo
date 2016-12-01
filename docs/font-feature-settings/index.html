@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.min.css">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            src: url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 700;
+            src: url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Bold.otf) format('opentype');
+        }
+
+        html, body {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .sample-block {
+            font-feature-settings: "palt";
+            background: #eceff1;
+            padding: 1em;
+        }
+
+        .default-block {
+            padding: 1em;
+            background: #e8f5e9;
+        }
+
+        .custom-block {
+            font-feature-settings: "palt";
+            letter-spacing: .1em;
+            background: #e3f2fd;
+            padding: 1em;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+
+<a href="">元のブログを見る</a>
+<div class="uk-container uk-container-center">
+    <ul>
+        <li class="default-block">
+            <h1>これはデフォルトの設定のBlockです。</h1>
+            <p>親譲りの無鉄砲で小供の時から損ばかりしている。</p>
+            <p>
+                小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。</p>
+            <p>
+                「弱虫やーい。」と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）</p>
+        </li>
+        <li class="sample-block">
+            <h1>これはfont-feature-settingsの設定をしたBlockです。</h1>
+            <p>親譲りの無鉄砲で小供の時から損ばかりしている。</p>
+            <p>
+                小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。</p>
+            <p>
+                「弱虫やーい。」と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）</p>
+        </li>
+        <li class="custom-block">
+            <h1>これはfont-feature-settingsとletter-spacingの設定をしたBlockです。</h1>
+            <p>親譲りの無鉄砲で小供の時から損ばかりしている。</p>
+            <p>
+                小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。</p>
+            <p>
+                「弱虫やーい。」と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）</p>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>
