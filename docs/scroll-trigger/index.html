@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="img/x-icon">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        img{
+            width:100%;
+        }
+        .card{
+            margin-bottom: 60px;
+        }
+        .hide{
+            opacity: 0;
+        }
+
+
+    </style>
+    <title>scroll-trigger</title>
+</head>
+<body>
+<hr style="height: 1000px;">
+<div class="uk-container uk-container-center">
+    <div class="first card animated hide" data-scroll="toggle(.fadeInRight,.invisible),offset(0,50px),once">
+        <img src="//placehold.jp/000000/ffffff/600x150.png?text=" alt="">
+    </div>
+    <div class="first invisible card hide animated" data-scroll="toggle(.bounce,.hide)">
+        <img src="//placehold.jp/cccccc/ffffff/600x150.png?text=" alt="">
+    </div>
+
+    <div class="first card" data-scroll="centerHorizontal">
+        <img src="//placehold.jp/3d4070/ffffff/600x150.png?text=" alt="">
+    </div>
+    <div class="first card" data-scroll="centerVertical">
+        <img src="//placehold.jp/3d4070/ffffff/600x150.png?text=" alt="">
+    </div>
+<hr style="height: 1000px;">
+
+</div>
+
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+<script src="./js/scrolltriger.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.min.css">
+    <title>Title</title>
+    <style>
+        .i {
+            background: #000;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="i">
+
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/animejs/1.1.2/anime.min.js"></script>
+<script>
+    function startAnimations(){
+
+        var d = $.Deferred();
+        d.resolve();//開始のトリガー
+        d.then(function() {
+                    console.log('tes');
+                    // シーン1
+                    anime({
+                        targets: '.i',
+                        duration:1000,
+                        translateX: {value: [0, 200], easing: 'easeInOutCubic'},
+                        complete: function () {
+                            d.resolve();
+                        }
+                    });
+                })
+                .then(function(){
+                    // シーン2
+                    anime({
+                        targets: '.i',
+                        duration:1000,
+                        translateY: {value: [0, 200], easing: 'easeInOutCubic'},
+                        complete: function () {
+                            d.resolve();
+                        }
+                    });
+                })
+                .then(function(){
+                    // シーン3
+                    anime({
+                        targets: '.i',
+                        duration:1000,
+                        translateX: {value: [200, 0], easing: 'easeInOutCubic'},
+                        complete: function () {
+                            d.resolve();
+                        }
+                    });
+                })
+                .then(function(){
+                    // シーン4
+                    anime({
+                        targets: '.i',
+                        duration:1000,
+                        translateY: {value: [200, 0], easing: 'easeInOutCubic'},
+                        complete: function () {
+                            d.resolve();
+                        }
+                    });
+                })
+                .then(function(){
+                    // loopしてはじめにもどる
+                   //setTimeout(startAnimations, 1);
+                });
+
+    }
+    startAnimations();
+
+
+
+</script>
+
+</body>
+</html>

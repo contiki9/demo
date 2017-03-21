@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="これはディスクリプションです" name="description">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>Title</title>
+    <style>
+        div.hoge .color{
+            color:#000;
+        }
+    </style>
+</head>
+<body>
+
+<h1>一番かんたんなRiot.js</h1>
+<!-- place the custom tag anywhere inside the body -->
+<sample></sample>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js'></script>
+<script src="//cdn.jsdelivr.net/riot/2.4/riot+compiler.min.js"></script>
+
+
+<!-- include the tag -->
+<script type="riot/tag" src="./tag/sample.tag"></script>
+<!-- mount the tag -->
+<script>
+    riot.mount('sample', {
+        who: 'Riot'
+    })
+</script>
+
+</body>
+</html>
