@@ -2,7 +2,7 @@
 * Noto Serif CJK  (japanese) https://www.google.com/get/noto/
  */
 @font-face {
-    font-family: 'Noto Serif CJK JP';
+    font-family: 'Noto Serif Japanese';
     font-style: normal;
     font-weight: 400;
     src: url(../../fonts/NotoSerifCJKjp-Regular.woff2) format('woff2'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'Noto Serif CJK JP';
+    font-family: 'Noto Serif Japanese';
     font-style: normal;
     font-weight: 700;
     src: url(../../fonts/NotoSerifCJKjp-Bold.woff2) format('woff2'),
@@ -20,9 +20,9 @@
 }
 
 .wf-noto-serif p {
-    font-family: "Noto Serif CJK JP";
+    font-family: "Noto Serif Japanese";
 }
 
 html, body {
-    font-family: 'Noto Serif CJK JP', sans-serif;
+    font-family: 'Noto Serif Japanese', sans-serif;
 }
