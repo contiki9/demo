@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="jsプラグイン「aos」のサンプルページ" name="description">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/css/uikit.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <title>「aos」のサンプルページ</title>
+    <style>
+
+        section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bg {
+            padding: 100px;
+            margin: 100px;
+            background: #263238;
+            color: #FFF;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            section {
+                max-width: none;
+                width: 100%;
+            }
+            .bg{
+                margin-left:0;
+                margin-right:0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div style="margin-top: 30px;margin-bottom: 500px; text-align: center;">
+    <p>下にスクロールしてください</p>
+</div>
+
+<section>
+    <h2>動作サンプル fade</h2>
+    <div class="bg" data-aos="fade-up"><code>data-aos="fade-up"</code></div>
+    <div class="bg" data-aos="fade-down"><code>data-aos="fade-down"</code></div>
+    <div class="bg" data-aos="fade-left"><code>data-aos="fade-left"</code></div>
+    <div class="bg" data-aos="fade-right"><code>data-aos="fade-right"</code></div>
+</section>
+<section>
+    <h2>動作サンプル fade</h2>
+    <div class="bg" data-aos="flip-up"><code>data-aos="flip-up"</code></div>
+    <div class="bg" data-aos="flip-down"><code>data-aos="flip-down"</code></div>
+    <div class="bg" data-aos="flip-left"><code>data-aos="flip-left"</code></div>
+    <div class="bg" data-aos="flip-right"><code>data-aos="flip-right"</code></div>
+</section>
+<section>
+    <h2>動作サンプル zoom-in</h2>
+    <div class="bg" data-aos="zoom-in"><code>data-aos="zoom-in"</code></div>
+    <div class="bg" data-aos="zoom-out"><code>data-aos="zoom-out"</code></div>
+    <div class="bg" data-aos="zoom-in-up"><code>data-aos="zoom-in-up"</code></div>
+    <div class="bg" data-aos="flip-left"><code>data-aos="flip-left"</code></div>
+    <div class="bg" data-aos="flip-right"><code>data-aos="flip-right"</code></div>
+</section>
+
+<section>
+    <h2>動作サンプル SETTINGS</h2>
+    <div class="bg" data-aos="fade-left" data-aos-offset="500"><code>data-aos-offset="500"</code></div>
+    <div class="bg" data-aos="flip-left" data-aos-anchor-placement="center-center"><code>data-aos-anchor-placement="center-center"></code>
+    </div>
+
+    <div class="bg" data-aos="zoom-in" data-aos-duration="3000"><code>data-aos-duration="3000"</code></div>
+    <div class="bg" data-aos="zoom-out" data-aos-easing="linear"><code>data-aos-easing="linear"</code></div>
+    <div class="bg" data-aos-once="true"><code>data-aos-once="true"</code></div>
+
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/js/uikit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.16/js/uikit-icons.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+
+<script>
+    // aosの初期化
+    AOS.init({
+        disable: 'mobile'
+    });
+
+</script>
+
+
+</body>
+</html>
