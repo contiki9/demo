@@ -4,3 +4,4 @@
 *.cfg
 out
 gen
+/node_modules
